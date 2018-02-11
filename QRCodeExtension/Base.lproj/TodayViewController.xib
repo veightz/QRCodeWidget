@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="TodayViewController" customModule="QRCodeExtension" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="Aqo-t5-Cbd" id="Kot-1L-Mdo"/>
+                <outlet property="inputTextField" destination="PfA-Tq-8mt" id="nyn-3Z-qiZ"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView misplaced="YES" simulatedAppContext="notificationCenter" translatesAutoresizingMaskIntoConstraints="NO" id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="315" height="313"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Aqo-t5-Cbd">
+                    <rect key="frame" x="20" y="8" width="275" height="275"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Aqo-t5-Cbd" secondAttribute="height" multiplier="1:1" id="kbQ-DY-Idf"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="260" id="osj-k9-B49"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="Uci-ko-OHW"/>
+                </imageView>
+                <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PfA-Tq-8mt">
+                    <rect key="frame" x="20" y="291" width="275" height="22"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" focusRingType="none" bezelStyle="round" id="afK-eX-F04">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="PfA-Tq-8mt" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="1vD-Ye-a8h"/>
+                <constraint firstItem="Aqo-t5-Cbd" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="346-MX-ke8"/>
+                <constraint firstItem="Aqo-t5-Cbd" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="8Oj-o1-k7w"/>
+                <constraint firstItem="PfA-Tq-8mt" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="E2m-1m-cgg"/>
+                <constraint firstAttribute="bottom" secondItem="Aqo-t5-Cbd" secondAttribute="bottom" constant="8" id="XYQ-8O-PMn"/>
+                <constraint firstItem="Aqo-t5-Cbd" firstAttribute="top" secondItem="PfA-Tq-8mt" secondAttribute="bottom" constant="8" id="dfe-hw-Bgl"/>
+                <constraint firstItem="PfA-Tq-8mt" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="gVq-ca-2Zd"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="348"/>
+        </customView>
+    </objects>
+</document>
